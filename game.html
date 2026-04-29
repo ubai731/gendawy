@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Uicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 id="e" onmousedown="secretvis()" onmouseup="che()">
+      Ops There are Secret Thing To Show The Game
+    </h1>
+    <h1 onclick="clch()" style="visibility: hidden" id="cha">
+      I Challenge You To Click Me
+    </h1>
+    <h1 id="gu">you have 1 chance if you mess it make reload</h1>
+    <header id="l" style="visibility: hidden">
+      <div>
+        <h1>learn web developer.</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="mailto:gendiubai@gmail.com">contact us</a>
+            </li>
+            <li>
+              <a href="about_me.html">About me</a>
+            </li>
+            <li>
+              <a href="Whats_new.html">what's new</a>
+            </li>
+            <li>
+              <a href="index.html">home page</a>
+            </li>
+          </ul>
+        </nav>
+        <a id="in" class="in" href="login.html">log in</a>
+        <a id="center" class="center" onclick="logout()">logout</a>
+        <a id="up" class="up" href="signup.html">sign up</a>
+      </div>
+      <div>
+        <h1
+          onmouseout="chi()"
+          onmouseover="chh()"
+          style="visibility: hidden"
+          id="bh"
+        >
+          ...???
+        </h1>
+      </div>
+    </header>
+    <main id="i" style="visibility: hidden">
+      <input id="stcu" type="number" placeholder="Enter The Start Count" />
+      <a id="c" onclick="game()">Click Me</a>
+      <hr />
+      <hr />
+      <br />
+      <br />
+      <h1>Number 1</h1>
+      <input
+        id="n1"
+        type="number"
+        placeholder="Enter the Number to make + opration"
+      />
+      <h1>Number 2</h1>
+      <input
+        id="n2"
+        type="number"
+        placeholder="Enter the Number to make + opration"
+      />
+      <a onclick="showresult()">Calculate +</a>
+      <br /><br /><br />
+      <input type="number" id="stnu" placeholder="type the start Number" />
+      <input type="number" id="cunu" placeholder="type the end Number" />
+      <input type="number" id="jpnu" placeholder="type the jump Number" />
+      <a onclick="forlop()">Start Count</a>
+      <h1 style="color: red" id="errshow"></h1>
+      <a onclick="picdate()">Show Date</a>
+      <a onclick="addelement()">Add Element</a>
+    </main>
+    <h1 id="mumo">...??F</h1>
+    <script src="JS/game.js"></script>
+  </body>
+</html>
